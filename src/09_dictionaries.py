@@ -55,5 +55,5 @@ print(waypoints)
 # YOUR CODE HERE
 
 for waypoint in waypoints:
-    for value in waypoints.values():
-        print(vlaue)
+    for value in waypoint.values():
+        print(value)

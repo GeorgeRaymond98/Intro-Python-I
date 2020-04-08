@@ -22,11 +22,14 @@ print(f1(1, 2))
 # YOUR CODE HERE
 
 
-def f2(*nums):
-    sum = 0
-    for num in nums:
-        sum += num
-        return sum
+def f2(*args):
+    return sum(args)
+
+# def f2(*args):
+#     sum = 0
+#     for arg in args:
+#         sum += args
+#     return sum
 
 
 print(f2(1))                    # Should print 1
@@ -65,9 +68,15 @@ print(f3(8))     # Should print 9
 
 # YOUR CODE HERE
 
-# Should print
+# Should print Look**kwargs
 # key: a, value: 12
 # key: b, value: 30
+
+def f4(**kwargs):
+    for k, v in kwargs.items():
+        print("key:", k, ", value:", v)
+
+
 f4(a=12, b=30)
 
 # Should print
